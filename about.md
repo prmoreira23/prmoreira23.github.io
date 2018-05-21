@@ -3,16 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+![image tooltip here](/assets/pablo.jpeg)
+*This is me -- Pablo.*
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Born and raised in Tucumã, Brazil, which is a small town in the Amazon. I have a background in Computer Science, and I love to code and build tech products. My hobbies are hiking, binge watching Netflix original series, and eating Asian food.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I am a Software Engineer student at Flatiron School in Brooklyn, and in the next 15 weeks I will be trained to use several latest technologies for web development, including but not limited to: Ruby, Sinatra, Ruby on Rails, HTML 5, CSS 3, JavaScript, JQuery, D3, Git, Github, Node.JS, PostgreSQL, MongoDB, among others.
