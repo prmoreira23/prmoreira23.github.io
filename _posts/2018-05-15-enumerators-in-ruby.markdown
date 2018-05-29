@@ -112,7 +112,7 @@ The `Detect` method is just an alias for the `Find` method.
 {% highlight ruby %}
 names = ["Joseph", "Paul", "Pablo", "Mary", "Kristy"]
 
-names.find { |name| name == "Patrick" }
+names.detect { |name| name == "Patrick" }
 
 # => nil
 {% endhighlight %}
