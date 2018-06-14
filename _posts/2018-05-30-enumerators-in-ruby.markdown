@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Enumerators in Ruby"
-date:   2018-05-15 08:48:46 -0400
+date:   2018-05-30 08:48:46 -0400
 categories: ruby enumerators
 ---
 Enumerators are a set of methods to traverse, search, sort and manipulate collections (Lists and Hashes) in Ruby.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Demystifying Data Structures in Ruby"
-date:   2018-06-12 08:48:46 -0400
-categories: ruby "data structures"
+date:   2018-06-14 08:48:46 -0400
+categories: ruby data structures
 ---
 
 The human being has been inspired by nature to develop ideas for a long time. Data structures are no different.  It is a way of organizing and storing observations that have been abstracted from their real world environment. For instance, a classroom could be represented as an array with the students' names, in the form of strings.  A student could also be represented as an object with endowed attributes (what they look like) and behavior (what they do).
