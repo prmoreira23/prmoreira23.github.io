@@ -5,14 +5,12 @@ date:   2018-06-14 08:48:46 -0400
 categories: ruby data structures
 ---
 
-The human being has been inspired by nature to develop ideas for a long time. Data structures are no different.  It is a way of organizing and storing observations that have been abstracted from their real world environment. For instance, a classroom could be represented as an array with the students' names, in the form of strings.  A student could also be represented as an object with endowed attributes (what they look like) and behavior (what they do).
+The human being has been inspired by nature to develop ideas for a long time. Data structures are no different.  It is a way of organizing and storing observations that have been abstracted from their real world environment. For instance, a classroom of students could be represented as an array of names.  A student could also be represented as an object with endowed attributes (what they look like) and behavior (what they do).
 
-Ruby gives us several collection types for us use. By far, the most popular ones are arrays and hashes. There are also: sets, tuples, structs, open structs and objects.
-
-In the sections below we'll learn about each one of them.
+Ruby gives us several collection types for us to use. Along with arrays and objects, there are also: hashes, sets, tuples, and structs.
 
 # Arrays
-Arrays can hold anything that inherits from Object. It is a collection separated by a comma that maintains order.
+Arrays can hold anything that inherits from the Object class. An array is a collection separated by commas to maintain order.
 
 {% highlight ruby %}
 # Ways to create an Array
@@ -31,7 +29,10 @@ my_array
 {% endhighlight %}
 *Code 1. Working With Arrays.*
 
-Arrays make it easier to implement other data structures like: Stacks (LIFO - Last In First Out), see Figure 1 and Code 2, and Queues (FIFO - First In First Out), see Figure 2 and Code 3. We can accomplish characteristics to implement these data structures by using the methods: pop() and push, and shift() and unshift().
+Arrays make it easier to implement other data structures like: stacks and queues. The stack organizes data like a kitchen dishwasher. First, plates become our data. We organize the plates by taking one and putting it down on the table, one on top of the other. When we are ready to serve people, we grab the top plate first. The Queue organizes data like a grocery store line. Someone enters the store, gets their groceries, and then they go to the cashier, wait their turn in the line, pay and leave. We can model these scenarios with abstract methods such as: pop() and push, and shift() and unshift().
+
+(LIFO - Last In First Out)
+(FIFO - First In First Out)
 
 ![image tooltip here](/assets/stack-data-structure.gif)
 
@@ -127,8 +128,33 @@ my_queue.to_s
 {% endhighlight %}
 *Code 3. Queue Data Structure Implementation in Ruby.*
 
+# Objects (An instance of a Class)
+Object-Oriented Programming gives us the possibility to create customized data structures. In the example below, we can see a blueprint of a person. From that definition it is possible to create instances of it.
+
+{% highlight ruby %}
+class Person
+  attr_accessor :name, :age
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+end
+
+persons = []
+
+persons << Person.new("Pablo", 23);
+persons << Person.new("Patrick", 21);
+
+persons.first.name
+# => "Pablo"
+persons.first.age
+# => 23
+{% endhighlight %}
+
+By using classes we have a whole world of possibilities when it comes to develop data structures; we can build pretty much any type of struct and even create hybrid ones.
+
 # Hashes
-Hashes are a data structure similar to Arrays.  Instead of relying on position (an index) to find values, hashes use a key/value structure to store and retrieve data.  The power is in the key which allows easy detection of the desired value.  The ability to retrieve data by name allows for higher performance in working memory. (see code 4).
+Hashes are a data structure similar to arrays.  Instead of relying on the item's place in line, which we also call the index, we can use a key/value structure to store and retrieve data. The power is in the ability to find an item directly via its key. The ability to retrieve data by key allows for higher performance in working memory. (see code 4).
 
 {% highlight ruby %}
 prince = {};
@@ -149,7 +175,7 @@ students[:second]
 {% endhighlight %}
 *Code 4. Working With Hashes.*
 
-It is less efficient to use strings as keys in hashes. A simple test were performed to observe retrieving time (see code 5) for hashes using string and symbols as keys. It took ~ 1.17 seconds to retrieve 10,000,000 times the value using a string as key; and it took ~ 0.68 seconds using a symbol as key. The difference is ~ 41.02 % less time when symbols are used.
+It is less efficient to use strings than symbols as keys. A simple test was performed to observe retrieval time (see code 5) for hashes using string and symbols as keys. It took ~ 1.17 seconds to retrieve 10,000,000 times the value using a string as key; and it took ~ 0.68 seconds using a symbol as key. The difference is ~ 41.02 % less time when symbols are used.
 
 {% highlight ruby %}
 require 'benchmark'
@@ -273,30 +299,7 @@ lawrence.age
 # => 48.95
 {% endhighlight %}
 
-# Classes
-Object-Oriented Programming gives us the possibility to create customized data structures. In the example below, we can see a definition (blue print) of a person, from that definition it is possible to create instances of it.
 
-{% highlight ruby %}
-class Person
-  attr_accessor :name, :age
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
-end
-
-persons = []
-
-persons << Person.new("Pablo", 23);
-persons << Person.new("Patrick", 21);
-
-persons.first.name
-# => "Pablo"
-persons.first.age
-# => 23
-{% endhighlight %}
-
-By using classes we have a whole world of possibilities when it comes to develop data structures; we can build pretty much any type of struct and even create hybrid ones.
 
 Data structures are very important to manipulate and organize data. It makes it easier to abstract concepts from the real world.
 
