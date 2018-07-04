@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSS Selectors For DOM Manipulation"
-date:   2018-06-14 08:48:46 -0400
+date:   2018-07-04 08:48:46 -0400
 categories: ruby data structures
 ---
 
