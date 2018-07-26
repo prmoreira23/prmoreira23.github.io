@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Real-time Applications With WebRTC"
-date:   2018-07-04 08:48:46 -0400
+date:   2018-07-26 08:48:46 -0400
 categories: webrtc real-time
 ---
 
